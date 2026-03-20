@@ -8,7 +8,7 @@ router.get('/status', (req, res) => {
     const configured = !!key.trim();
     res.json({
         configured,
-        message: configured ? 'Google API key is set. You can use Gemini, Maps, and Speech-to-Text.' : 'Google API key is not set. Add GOOGLE_API_KEY in Railway environment variables.'
+        message: configured ? 'Googlev API key is set. You can use Gemini, Maps, and Speech-to-Text.' : 'Google API key is not set. Add GOOGLE_API_KEY in Railway environment variables.'
     });
 });
 
